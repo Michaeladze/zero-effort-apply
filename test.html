@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button class='button1' id="b1">View Appointment Slots</button>
+<ul>
+    <li class="appointment-btn" id="li">
+        20
+    </li>
+</ul>
+<script>
+    document.getElementById("b1").addEventListener('click', (e) => {
+        e.target.style.backgroundColor = 'red';
+    })
+
+    document.getElementById("li").addEventListener('click', (e) => {
+        e.target.style.backgroundColor = 'red';
+        const b = document.createElement('button');
+        b.classList.add('btn-primary-vfs');
+        b.textContent = 'Continue';
+        document.body.appendChild(b);
+    })
+</script>
+</body>
+</html>
